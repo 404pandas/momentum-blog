@@ -1,10 +1,29 @@
 .site {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .site-content {
-    flex-grow: 1;
-    padding-top: 60px;
+  flex-grow: 1;
+  padding-top: 60px;
+}
+
+body {
+  background-color: #f8f0e5 !important;
+}
+
+.gh-foot-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gh-primary-btn {
+  background-color: var(--green-accent);
+  border: 2px solid var(--light-tan);
+  color: var(--light-tan);
+}
+
+.gh-portal-triggerbtn-container.with-label {
+  background: var(--green-accent) !important;
 }
