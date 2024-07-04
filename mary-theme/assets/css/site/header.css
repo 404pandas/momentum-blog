@@ -1,8 +1,12 @@
 .gh-head-logo {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .gh-head-menu,
 .gh-head-actions {
-    font-weight: 600;
+  font-weight: 600;
+}
+
+.gh-head {
+  background-color: var(--lips-of-apricot);
 }
