@@ -1,13 +1,25 @@
 /* Setting up alternating color background, easily replaced by a color of Donna's choice */
 .post {
+  display: flex !important;
+  padding: 2%;
   &:nth-child(3n-1) {
-    background-color: #dac0a3;
+    background-color: var(--dark-tan);
   }
   &:nth-child(3n-2) {
-    background-color: #eadbc8;
+    background-color: var(--tan);
   }
   &:nth-child(3n-3) {
-    background-color: #f8f0e5;
+    background-color: var(--light-tan);
+  }
+}
+
+div.post-feed > article {
+  display: flex !important;
+  &:nth-child(odd) {
+    flex-direction: row;
+  }
+  &:nth-child(even) {
+    flex-direction: row-reverse;
   }
 }
 
@@ -18,7 +30,7 @@
 .post-feed .post-media {
   width: 100%;
   max-width: calc(960px + var(--gap) * 2);
-  margin: 0 auto 40px;
+  margin: auto;
 }
 
 .post-media-tag {
@@ -69,7 +81,7 @@
 }
 
 .post-tag {
-  color: var(--primary-color);
+  color: var(--green-accent);
 }
 
 .post-excerpt {
@@ -80,6 +92,12 @@
   font-family: var(--font-serif);
 }
 
+/* Custom styling- Mary */
+article.post.single-post {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 767px) {
   .post-media.large {
     margin-bottom: 30px;
@@ -87,5 +105,11 @@
 
   .post-feed .post-title {
     font-size: 24px;
+  }
+
+  .post-feed .post-media {
+    width: 70% !important;
+    margin: auto;
+    margin-bottom: 5%;
   }
 }
